@@ -7,7 +7,7 @@ var app = express();
 app.set('view engine', 'ejs');
 
 //Static files handling
-app.use(express.static('./public'));
+app.use(express.static(__dirname + './public'));
 
 //run controllers
 todoController(app);
